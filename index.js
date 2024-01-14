@@ -1,26 +1,6 @@
-const express = require('express')
-const cors = require('cors')
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
-const app = express()
-
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json({ limit: '2kb' }))
-
-var corsOptions = {
-    origin: "*",
-    optionsSuccessStatus: 200
-}
-
-app.use(cors(corsOptions))
-
-app.get('/', function(req, res) {
-    res.send('Hola Mundo')
-})
-
-app.get('/clientes', function(req, res) {
-    res.send('Lista de clientes')
-})
-
+const app = require('./src/app')
 const port = process.env.PORT
 
 app.listen(port, () => {

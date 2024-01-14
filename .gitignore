@@ -6,6 +6,7 @@ node_modules/
 
 # vuepress v2.x temp and cache directory
 .temp
+.DS_Store
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
