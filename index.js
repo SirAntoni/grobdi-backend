@@ -14,5 +14,11 @@ var corsOptions = {
 app.use(cors(corsOptions))
 
 app.get('/', function(req, res) {
-    res.send('API V1 - BACKEND GROBDI')
+    res.send('Hola Mundo')
+})
+
+const port = process.env.PORT = 3000
+
+app.listen(port, () => {
+    console.log(`listening on port ${port}`)
 })
