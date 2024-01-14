@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env
+
+# vuepress v2.x temp and cache directory
+.temp
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
