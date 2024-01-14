@@ -17,6 +17,10 @@ app.get('/', function(req, res) {
     res.send('Hola Mundo')
 })
 
+app.get('/clientes', function(req, res) {
+    res.send('Lista de clientes')
+})
+
 const port = process.env.PORT
 
 app.listen(port, () => {
